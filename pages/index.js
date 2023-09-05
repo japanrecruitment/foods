@@ -7,7 +7,9 @@ import {
     products_en,
     products_ja,
     whyChooseUs_en,
-    whyChooseUs_ja
+    whyChooseUs_ja,
+    blobs_en,
+    blobs_ja
 } from '../app/config';
 import { Element } from 'react-scroll';
 import { useRouter } from 'next/router';
@@ -27,6 +29,7 @@ const Component = () => {
 
     const whyChooseUs = locale === 'en' ? whyChooseUs_en : whyChooseUs_ja;
     const products = locale === 'en' ? products_en : products_ja;
+    const blobs = locale === 'en' ? blobs_en : blobs_ja;
 
     const HeroTitleComponent = (props) => (
         <h2 className="text-3xl font-bold mb-4 leading-normal" {...props}>
@@ -108,7 +111,25 @@ const Component = () => {
                 </Section>
             </Element>
             <Element name="introduction">
-                <Section id="introduction">{t('introduction')}</Section>
+                <Section id="introduction">
+                    <div className="product-list-container">
+                        {blobs.map(
+                            ({ icon, title, subtitle, description }, index) => (
+                                <div key={index} className="item">
+                                    <div>
+                                        {icon({
+                                            className:
+                                                'w-12 h-12 text-primary-red mb-6'
+                                        })}
+                                    </div>
+                                    <h4>{title}</h4>
+                                    <h5 className="mb-4">{subtitle}</h5>
+                                    <p>{description}</p>
+                                </div>
+                            )
+                        )}
+                    </div>
+                </Section>
             </Element>
             <Element name="products">
                 <Section id="products">
