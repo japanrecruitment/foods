@@ -45,7 +45,7 @@ const Navigation = () => {
                     </div>
                     <div className="hidden space-x-10 md:flex md:ml-10">
                         <LinkItem
-                            to="hero"
+                            to="company"
                             className="text-slate-700 hover:text-slate-900">
                             {t('about')}
                         </LinkItem>
