@@ -1,5 +1,8 @@
 import {
     ArrowPathIcon,
+    ArrowsPointingOutIcon,
+    BarsArrowDownIcon,
+    BarsArrowUpIcon,
     CheckBadgeIcon,
     GlobeAsiaAustraliaIcon,
     HeartIcon
@@ -157,5 +160,53 @@ export const whyChooseUs_ja = [
         description:
             '私たちは倫理的な調達と持続可能な実践に尽力し、素晴らしい味だけでなく明確な良心を味わっていただけるよう努めています。',
         icon: (props) => <ArrowPathIcon {...props} />
+    }
+];
+
+export const blobs_en = [
+    {
+        icon: (props) => <BarsArrowDownIcon {...props} />,
+        title: 'Import',
+        subtitle: 'Bringing the World to Your Table',
+        description:
+            'Discover our passion for importing the finest global culinary treasures. We bridge borders to deliver exceptional flavors right to your plate.'
+    },
+    {
+        icon: (props) => <BarsArrowUpIcon {...props} />,
+        title: 'Export',
+        subtitle: 'Sharing Culinary Excellence Worldwide',
+        description:
+            "We're dedicated to exporting top-quality food products worldwide. Our commitment knows no boundaries as we share our culinary excellence."
+    },
+    {
+        icon: (props) => <ArrowsPointingOutIcon {...props} />,
+        title: 'Distribution',
+        subtitle: 'Connecting Through Food',
+        description:
+            'Beyond imports and exports, we connect the world through premium food products, including our special connection to Japan. Join us in a global culinary experience.'
+    }
+];
+
+export const blobs_ja = [
+    {
+        icon: (props) => <BarsArrowDownIcon {...props} />,
+        title: '輸入',
+        subtitle: '世界を食卓へ',
+        description:
+            '世界の最高級グルメの宝物を輸入するという私たちの情熱をご覧ください。 私たちは国境を越えて、卓越した味わいをあなたのお皿に届けます。'
+    },
+    {
+        icon: (props) => <BarsArrowUpIcon {...props} />,
+        title: '輸出',
+        subtitle: '卓越した料理を世界中に共有',
+        description:
+            '当社は最高品質の食品を世界中に輸出することに専念しています。 私たちの卓越した料理を共有するため、私たちの取り組みには境界がありません。'
+    },
+    {
+        icon: (props) => <ArrowsPointingOutIcon {...props} />,
+        title: '分布',
+        subtitle: '食を通じてつながる',
+        description:
+            '輸出入を超えて、私たちは日本との特別なつながりを含め、プレミアム食品を通じて世界を結びつけます。 世界的な料理体験にぜひご参加ください。'
     }
 ];
