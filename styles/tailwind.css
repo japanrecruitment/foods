@@ -34,7 +34,7 @@ section .section-container {
 }
 
 section#hero {
-    @apply bg-gradient-to-br from-cyan-800 to-primary-blue my-0 py-0 h-96 text-white flex items-center;
+    @apply bg-gradient-to-br from-cyan-800 to-primary-blue my-0 py-0 h-96 text-white flex items-center text-center;
 }
 
 section#products,
