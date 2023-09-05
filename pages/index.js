@@ -1,4 +1,5 @@
 import { useState, Fragment } from 'react';
+import Trans from 'next-translate/Trans';
 import Head from 'next/head';
 import MainLayout from '../app/layout/MainLayout';
 import useTranslation from 'next-translate/useTranslation';
@@ -27,6 +28,11 @@ const Component = () => {
     const whyChooseUs = locale === 'en' ? whyChooseUs_en : whyChooseUs_ja;
     const products = locale === 'en' ? products_en : products_ja;
 
+    const HeroTitleComponent = (props) => (
+        <h2 className="text-3xl font-bold mb-4 leading-normal" {...props}>
+            {props.children}
+        </h2>
+    );
     return (
         <>
             <Head>
@@ -94,15 +100,11 @@ const Component = () => {
             </Transition>
             <Element name="hero">
                 <Section id="hero" className="hero">
-                    <h2 className="text-2xl font-bold mb-6">
-                        Welcome to {t('site-name')}
-                        <br />
-                        Your Gateway to Global Culinary Delights!
-                    </h2>
-                    <p className="text-blue-200">
-                        Explore a World of Flavors with Our Premium Food Imports
-                        and Exports
-                    </p>
+                    <Trans
+                        i18nKey="common:hero-title"
+                        components={[<HeroTitleComponent />, <br />]}
+                    />
+                    <p className="text-blue-200">{t('hero-subtitle')}</p>
                 </Section>
             </Element>
             <Element name="introduction">

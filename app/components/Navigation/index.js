@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 import useTranslation from 'next-translate/useTranslation';
 import { Transition } from '@headlessui/react';
 import { LanguageSwitcher, LinkItem, JrgFoodLogo } from '..';
