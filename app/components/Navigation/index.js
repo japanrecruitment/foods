@@ -23,7 +23,7 @@ const Navigation = () => {
                             <button
                                 onClick={() => setIsOpen(true)}
                                 type="button"
-                                className="bg-blue-700 rounded-md p-2 inline-flex items-center justify-center text-gray-100 hover:bg-blue-600 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+                                className="bg-primary-blue rounded-md p-2 inline-flex items-center justify-center text-gray-100 hover:bg-blue-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
                                 aria-expanded="false">
                                 <span className="sr-only">Open main menu</span>
                                 {/* <!-- Heroicon name: outline/menu --> */}
@@ -79,7 +79,7 @@ const Navigation = () => {
                         <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5  ">
                             <div className="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <span className="text-3xl tracking-normal font-normal text-gray-400 sm:leading-normal">
+                                    <span className="text-2xl tracking-normal font-bold text-primary-blue sm:leading-normal">
                                         JRG Food
                                     </span>
                                 </div>

@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
                     <>
                         <div>
                             <Menu.Button
-                                className={`inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-500 md:text-white bg-primary-blue ${
+                                className={`inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-primary-blue ${
                                     open ? 'bg-opacity-100' : 'bg-opacity-75'
                                 } group-hover:bg-opacity-100 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}>
                                 {languageNames[router.locale]}
