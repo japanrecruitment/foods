@@ -94,9 +94,12 @@ const Component = () => {
             </Transition>
             <Element name="hero">
                 <Section id="hero" className="hero">
-                    <h2>Welcome to {t('site-name')}</h2>
-                    <h3>Your Gateway to Global Culinary Delights!</h3>
-                    <p>
+                    <h2 className="text-2xl font-bold mb-6">
+                        Welcome to {t('site-name')}
+                        <br />
+                        Your Gateway to Global Culinary Delights!
+                    </h2>
+                    <p className="text-blue-200">
                         Explore a World of Flavors with Our Premium Food Imports
                         and Exports
                     </p>
