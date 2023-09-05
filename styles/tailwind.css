@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic',
+            'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'メイリオ', sans-serif;
+    }
+}
+
+:root {
+    --primary-red: #ed1c24;
+    --primary-blue: #002e6e;
+}
+
+html {
+    @apply text-gray-600;
+}
+
+.cls-1,
+.cls-2 {
+    stroke-width: 0px;
+}
+.cls-1 {
+    fill: var(--primary-red);
+}
+.cls-2 {
+    fill: var(--primary-blue);
+}
+
+section .section-container {
+    @apply max-w-5xl px-8 py-20 mx-auto w-full;
+}
+
+section#hero {
+    @apply bg-gradient-to-br from-cyan-800 to-primary-blue my-0 py-0 h-96 text-white flex items-center;
+}
+
+section#products {
+    @apply bg-blue-50 py-12;
+}
+
+h3.section-title {
+    @apply text-3xl font-bold mb-2 text-primary-red;
+}
+p.section-description {
+    @apply text-lg;
+}
+
+div.product-list-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12;
+}
+
+div.product-list-container .item .item-image {
+    @apply bg-white mb-6 aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl shadow-blue-100;
+}
+div.item h4 {
+    @apply font-bold mb-2 text-primary-blue text-lg;
+}
+div.item p {
+    @apply text-slate-500;
+}
+
+div.features-list-container {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6  lg:gap-y-12;
+}
+
+div.feature-item {
+    @apply flex flex-row space-x-6 bg-slate-50 rounded-lg p-6 border border-slate-100;
+}
