@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation';
 import { Transition } from '@headlessui/react';
 import { LanguageSwitcher, LinkItem, JrgFoodLogo } from '..';
 
-const Navigation = () => {
+export const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
     const { t, lang } = useTranslation('navigation');
     return (
@@ -133,5 +133,3 @@ const Navigation = () => {
         </div>
     );
 };
-
-export default Navigation;

@@ -1,14 +1,25 @@
-import {
-    ArrowPathIcon,
-    ArrowsPointingOutIcon,
-    BarsArrowDownIcon,
-    BarsArrowUpIcon,
-    CheckBadgeIcon,
-    GlobeAsiaAustraliaIcon,
-    HeartIcon
-} from '@heroicons/react/24/outline';
+import { IconName } from '../components';
 
-export const products_en = [
+export type ProductItem = {
+    title: string;
+    description: string;
+    image: string;
+};
+
+export type WhyChooseUsItem = {
+    title: string;
+    description: string;
+    icon: IconName;
+};
+
+export type BlobItem = {
+    title: string;
+    subtitle: string;
+    description: string;
+    icon: IconName;
+};
+
+export const products_en: ProductItem[] = [
     {
         title: 'Brazilian Chicken',
         description:
@@ -58,7 +69,7 @@ export const products_en = [
         image: 'images/tomato.jpg'
     }
 ];
-export const products_ja = [
+export const products_ja: ProductItem[] = [
     {
         title: 'ブラジルチキン',
         description:
@@ -109,77 +120,77 @@ export const products_ja = [
     }
 ];
 
-export const whyChooseUs_en = [
+export const whyChooseUs_en: WhyChooseUsItem[] = [
     {
         title: 'Quality Assurance',
         description:
             'We believe in the highest standards. Each product is carefully selected to meet our quality benchmarks.',
-        icon: (props) => <CheckBadgeIcon {...props} />
+        icon: 'CheckBadgeIcon'
     },
     {
         title: 'Global Network',
         description:
             "With a reach that spans continents, we ensure a seamless import and export process, including our special connection to Japan, to bring you the world's most sought-after flavors.",
-        icon: (props) => <GlobeAsiaAustraliaIcon {...props} />
+        icon: 'GlobeAsiaAustraliaIcon'
     },
     {
         title: 'Passion for Food',
         description:
             "We share your love for food. Our team's passion drives us to curate products that delight both your palate and senses.",
-        icon: (props) => <HeartIcon {...props} />
+        icon: 'HeartIcon'
     },
     {
         title: 'Sustainability',
         description:
             "We're committed to ethical sourcing and sustainable practices, ensuring that you savor not only great taste but also a clear conscience.",
-        icon: (props) => <ArrowPathIcon {...props} />
+        icon: 'ArrowPathIcon'
     }
 ];
 
-export const whyChooseUs_ja = [
+export const whyChooseUs_ja: WhyChooseUsItem[] = [
     {
         title: '品質保証',
         description:
             '私たちは最高の基準を信じています。 各製品は、当社の品質ベンチマークを満たすように慎重に選択されています。',
-        icon: (props) => <CheckBadgeIcon {...props} />
+        icon: 'CheckBadgeIcon'
     },
     {
         title: 'グローバルネットワーク',
         description:
             '大陸を越えてサービスを展開する当社は、日本との特別なつながりを含め、シームレスな輸出入プロセスを保証し、世界で最も人気のあるフレーバーをお届けします。',
-        icon: (props) => <GlobeAsiaAustraliaIcon {...props} />
+        icon: 'GlobeAsiaAustraliaIcon'
     },
     {
         title: '食への情熱',
         description:
             '私たちはあなたの食べ物への愛を共有します。 私たちのチームの情熱は、あなたの味覚と五感の両方を喜ばせる製品を厳選することに私たちを駆り立てます。',
-        icon: (props) => <HeartIcon {...props} />
+        icon: 'HeartIcon'
     },
     {
         title: '持続可能性',
         description:
             '私たちは倫理的な調達と持続可能な実践に尽力し、素晴らしい味だけでなく明確な良心を味わっていただけるよう努めています。',
-        icon: (props) => <ArrowPathIcon {...props} />
+        icon: 'ArrowPathIcon'
     }
 ];
 
-export const blobs_en = [
+export const blobs_en: BlobItem[] = [
     {
-        icon: (props) => <BarsArrowDownIcon {...props} />,
+        icon: 'BarsArrowDownIcon',
         title: 'Import',
         subtitle: 'Bringing the World to Your Table',
         description:
             'Discover our passion for importing the finest global culinary treasures. We bridge borders to deliver exceptional flavors right to your plate.'
     },
     {
-        icon: (props) => <BarsArrowUpIcon {...props} />,
+        icon: 'BarsArrowUpIcon',
         title: 'Export',
         subtitle: 'Sharing Culinary Excellence Worldwide',
         description:
             "We're dedicated to exporting top-quality food products worldwide. Our commitment knows no boundaries as we share our culinary excellence."
     },
     {
-        icon: (props) => <ArrowsPointingOutIcon {...props} />,
+        icon: 'ArrowsPointingOutIcon',
         title: 'Distribution',
         subtitle: 'Connecting Through Food',
         description:
@@ -187,23 +198,23 @@ export const blobs_en = [
     }
 ];
 
-export const blobs_ja = [
+export const blobs_ja: BlobItem[] = [
     {
-        icon: (props) => <BarsArrowDownIcon {...props} />,
+        icon: 'BarsArrowDownIcon',
         title: '輸入',
         subtitle: '世界を食卓へ',
         description:
             '世界の最高級グルメの宝物を輸入するという私たちの情熱をご覧ください。 私たちは国境を越えて、卓越した味わいをあなたのお皿に届けます。'
     },
     {
-        icon: (props) => <BarsArrowUpIcon {...props} />,
+        icon: 'BarsArrowUpIcon',
         title: '輸出',
         subtitle: '卓越した料理を世界中に共有',
         description:
             '当社は最高品質の食品を世界中に輸出することに専念しています。 私たちの卓越した料理を共有するため、私たちの取り組みには境界がありません。'
     },
     {
-        icon: (props) => <ArrowsPointingOutIcon {...props} />,
+        icon: 'ArrowsPointingOutIcon',
         title: '分布',
         subtitle: '食を通じてつながる',
         description:
