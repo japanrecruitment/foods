@@ -8,7 +8,7 @@ const languageNames = {
     en: '🇺🇸 English'
 };
 
-const LanguageSwitcher = () => {
+export const LanguageSwitcher = () => {
     const router = useRouter();
 
     const handleLocaleChange = (newLocale) => {
@@ -80,5 +80,3 @@ const LanguageSwitcher = () => {
         </div>
     );
 };
-
-export default LanguageSwitcher;

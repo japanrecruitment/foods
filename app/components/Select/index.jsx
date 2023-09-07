@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { ChevronUpDownIcon } from '@heroicons/react/24/solid';
 
-const Select = ({ label, options, onChange, selected }) => {
+export const Select = ({ label, options, onChange, selected }) => {
     if (!selected) return null;
     return (
         <div>
@@ -78,8 +78,6 @@ const Select = ({ label, options, onChange, selected }) => {
         </div>
     );
 };
-
-export default Select;
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');

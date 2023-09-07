@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll';
 
-const LinkItem = ({ to, className, children, ...props }) => {
+export const LinkItem = ({ to, className, children, ...props }) => {
     return (
         <ScrollLink
             to={to}
@@ -14,5 +14,3 @@ const LinkItem = ({ to, className, children, ...props }) => {
         </ScrollLink>
     );
 };
-
-export default LinkItem;

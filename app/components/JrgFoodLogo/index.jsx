@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JrgFoodLogo = (props) => {
+export const JrgFoodLogo = (props) => {
     return (
         <div {...props}>
             <svg
@@ -144,5 +144,3 @@ const JrgFoodLogo = (props) => {
         </div>
     );
 };
-
-export default JrgFoodLogo;
