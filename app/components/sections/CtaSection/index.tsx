@@ -29,10 +29,7 @@ export const Cta = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<Record<string, string>>({});
     const [data, setData] = useState<ContactFormData>(defaultData);
-    const [message, setMessage] = useState<UserMessage | null>({
-        type: 'message',
-        message: 'success'
-    });
+    const [message, setMessage] = useState<UserMessage | null>(null);
 
     const { t } = useTranslation('common');
 
@@ -115,7 +112,7 @@ export const Cta = () => {
             } else {
                 setMessage({ type: 'error', message: 'something-went-wrong' });
             }
-            // setData(defaultData);
+            setData(defaultData);
         } catch (error) {
             setMessage({ type: 'error', message: 'something-went-wrong' });
         } finally {
