@@ -4,7 +4,7 @@ export const HeroTitle: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = (
     props
 ) => {
     return (
-        <h2 className="text-3xl font-bold mb-4 leading-normal" {...props}>
+        <h2 className="hero-title" {...props}>
             {props.children}
         </h2>
     );

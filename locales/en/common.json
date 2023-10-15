@@ -1,10 +1,41 @@
 {
     "site-name": "JRG Foods",
-    "hero-title": "<0>Welcome to JRG Foods<1 />Your Gateway to Global Culinary Delights!</0>",
-    "hero-subtitle": "Explore a World of Flavors with Our Premium Food Imports and Exports",
-    "introduction": "At JRG Foods, we're your ultimate source for the finest natural and processed food products from around the world. With a passion for flavors that transcend borders, we proudly import and export goods from and to Japan, delivering a diverse range of culinary treasures right to your plate. Embark on a gastronomic journey like no other.",
+    "hero-title": "<0>Select Specialities<1 />from Around the World</0>",
+    "hero-subtitle": "Bringing delicious ingredients carefully selected from all over the world to Japan!",
+    "introduction": "<0>JRG FOODS is a specialized trading company that imports and sells carefully selected commercial ingredients from around the world.<1 /><1 />Our motto is \"Delivering authentic taste to Japan!!\" and we are contributing to the development of restaurants in Japan, especially \"restaurants run by foreigners in Japan.\" Our mission is to “bridge Japan and the world through food”!!</0>",
     "our-products": "Our Products",
     "our-products-description": "Discover the Extravaganza of Taste and Quality",
     "who-choose-us": "Why choose us?",
-    "about": "About Company"
+    "about": "About Company",
+    "country-of-origin": "Country of origin",
+    "about-company": {
+        "name": "Company Name",
+        "address": "Address",
+        "established": "Established Year",
+        "capital": "Capital",
+        "representative": "Representative",
+        "board-member": "Board Member",
+        "business-contents": "Business Contents",
+        "ceo": "President",
+        "vp": "Vice President",
+        "ceo-name": "Takahiro Nogami",
+        "vp-name": "Sudan Thapa",
+        "head-office": "Head office",
+        "name-value": "Japan Recruitment Group Co., Ltd.",
+        "address-value": "Tokyo-To, Taito-Ku, Taito 2-11-7 (110-0016)",
+        "established-value": "12/2017",
+        "capital-value": "20 Million JPY"
+    },
+    "contact": "Contact",
+    "contact-form": {
+        "company-name": "Company name",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Contact number",
+        "message": "Message",
+        "send": "Send message",
+        "error": { "isRequired": "This field is required." },
+        "user-message-success": "Thank you for your message. We have received your message and will get back to you shortly.",
+        "user-message-error": "An error occurred. Please try again later."
+    }
 }

@@ -1,10 +1,41 @@
 {
     "site-name": "JRGフーズ",
-    "hero-title": "<0>JRGフーズへようこそ<1 />世界の美食への入り口!</0>",
-    "hero-subtitle": "当社のプレミアム食品の輸出入で味の世界を探索しましょう",
-    "introduction": "JRGフーズでは、世界中から最高級の自然食品や加工食品を入手できる究極の供給源です。 国境を越えた味への情熱を持って、当社は誇りを持って日本との間で商品の輸出入を行い、多様な美食の宝を皆様の食卓にお届けします。 他にはない美食の旅に出かけましょう。",
+    "hero-title": "<0>Select Specialities<1 />from Around the World</0>",
+    "hero-subtitle": "世界中から選りすぐった美味しい食材を日本へ！！",
+    "introduction": "<0>JRG FOODS は世界各国から厳選されたこだわりの業務用食材を輸入販売する専門商社です。<1 /><1 />「本場の美味しさを日本へお届け！！」ことをモットーとし、日本国内の飲食店、とりわけ「外国人が日本で運営するレストラン」の発展に寄与しています。「食を通じた日本と世界の架け橋」が私たちの使命です！！</0>",
     "our-products": "当社の製品",
     "our-products-description": "味と品質の贅沢を発見してください",
-    "who-choose-us": "なぜ私たちを選ぶのですか?",
-    "about": "会社概要"
+    "who-choose-us": "私たちを選ぶ理由",
+    "about": "会社概要",
+    "country-of-origin": "原産国",
+    "about-company": {
+        "name": "社名",
+        "address": "所在地",
+        "established": "設立",
+        "capital": "資本金",
+        "representative": "代表者",
+        "board-member": "役員",
+        "business-contents": "事業内容",
+        "ceo": "代表取締役",
+        "vp": "副社長",
+        "ceo-name": "野上　貴裕",
+        "vp-name": "タパ　スダン",
+        "head-office": "本社",
+        "name-value": "ジャパンリクルートメントグループ株式会社",
+        "address-value": "〒110-0016 東京都台東区台東2-11-7",
+        "established-value": "2017年12月",
+        "capital-value": "2,000万円"
+    },
+    "contact": "お問い合わせ",
+    "contact-form": {
+        "company-name": "会社名",
+        "name": "名前",
+        "email": "メール",
+        "phone": "電話番号",
+        "message": "メッセージ",
+        "send": "送信",
+        "error": { "isRequired": "この項目は必須です。" },
+        "user-message-success": "メッセージを受け取りましたので、すぐにご連絡させていただきます。",
+        "user-message-error": "エラーが発生しました。 後でもう一度試してください。"
+    }
 }

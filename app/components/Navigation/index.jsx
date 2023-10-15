@@ -5,7 +5,7 @@ import { LanguageSwitcher, LinkItem, JrgFoodLogo } from '..';
 
 export const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const { t, lang } = useTranslation('navigation');
+    const { t } = useTranslation('navigation');
     return (
         <div className="w-full bg-blue-50 py-4">
             <nav
@@ -45,9 +45,9 @@ export const Navigation = () => {
                     </div>
                     <div className="hidden space-x-10 md:flex md:ml-10">
                         <LinkItem
-                            to="company"
+                            to="hero"
                             className="text-slate-700 hover:text-slate-900">
-                            {t('about')}
+                            {t('home')}
                         </LinkItem>
                         <LinkItem
                             to="products"
@@ -58,6 +58,16 @@ export const Navigation = () => {
                             to="why-choose-us"
                             className="text-slate-700 hover:text-slate-900">
                             {t('why-choose-us')}
+                        </LinkItem>
+                        <LinkItem
+                            to="company"
+                            className="text-slate-700 hover:text-slate-900">
+                            {t('about')}
+                        </LinkItem>
+                        <LinkItem
+                            to="contact"
+                            className="text-slate-700 hover:text-slate-900">
+                            {t('contact')}
                         </LinkItem>
                     </div>
                 </div>
@@ -111,15 +121,20 @@ export const Navigation = () => {
                                 <LinkItem
                                     to="hero"
                                     className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-gray-50">
-                                    {t('about')}
+                                    {t('home')}
                                 </LinkItem>
                                 <LinkItem
                                     to="products"
                                     className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-gray-50">
-                                    {t('about')}
+                                    {t('products')}
                                 </LinkItem>
                                 <LinkItem
                                     to="why-choose-us"
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-gray-50">
+                                    {t('why-choose-us')}
+                                </LinkItem>
+                                <LinkItem
+                                    to="company"
                                     className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-gray-50">
                                     {t('about')}
                                 </LinkItem>

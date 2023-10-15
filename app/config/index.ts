@@ -2,6 +2,7 @@ import { IconName } from '../components';
 
 export type ProductItem = {
     title: string;
+    country: string;
     description: string;
     image: string;
 };
@@ -21,102 +22,118 @@ export type BlobItem = {
 
 export const products_en: ProductItem[] = [
     {
-        title: 'Brazilian Chicken',
+        title: 'Chicken',
         description:
-            'Succulent, tender, and raised with care, our Brazilian chicken is a testament to our commitment to quality. Taste the difference with every bite!',
-        image: 'images/brazil-chicken.jpg'
+            'The chicken we handle is plump and juicy. This is proof of our commitment to quality. Taste the difference in every bite.',
+        image: 'images/brazil-chicken.jpg',
+        country: 'Chicken'
     },
     {
         title: 'Cashew Nuts',
         description:
-            'Enjoy the wholesome goodness and rich flavor of our premium cashew nuts. Whether as a snack or an ingredient, these nuts elevate every dish.',
-        image: 'images/cachew-nuts.jpg'
+            'Premium cashew nuts. Enjoy the healthy flavor and rich taste as is! If you use it as an ingredient, it will complement any dish!',
+        image: 'images/cachew-nuts.jpg',
+        country: 'Vietnam'
     },
     {
         title: 'Charcoal',
         description:
-            'The essential element for an authentic BBQ experience. Our high-quality charcoal ensures your grilling adventures are filled with smoky perfection.',
-        image: 'images/charcol.jpg'
+            'Check out the "clogged sound" of our charcoal. This is proof that the burning time is maintained for a long time. It is useful in various scenes such as BBQ and grilled dishes.',
+        image: 'images/charcol.jpg',
+        country: 'Indonesia'
     },
     {
-        title: 'Australian Lamb and Mutton',
+        title: 'Lamb and Mutton',
         description:
-            "Indulge in the rich, savory taste of Australian lamb and mutton. Sourced from the pristine landscapes, it's a treat for your taste buds.",
-        image: 'images/australian-lamb.jpg'
+            'Enjoy the unique flavor of lamb and mutton. It is truly a blessing of nature. The richness is also exceptional.',
+        image: 'images/australian-lamb.jpg',
+        country: 'Australia'
     },
     {
-        title: 'Canola Oil (Australia and Canada)',
+        title: 'Canola Oil',
         description:
-            "Elevate your cooking with the heart-healthy goodness of Canola Oil. Sourced from the finest canola fields, it's the secret to delicious meals.",
-        image: 'images/canola-oil.jpg'
+            'Canola oil is said to be good for the body. If you want to take it to the next level, try our canola oil.',
+        image: 'images/canola-oil.jpg',
+        country: 'Australia'
     },
     {
         title: 'Honey',
         description:
-            "Nature's golden elixir, our honey is a pure delight. From floral to robust, our range of honey brings natural sweetness to your table.",
-        image: 'images/honey.jpg'
+            'Truly a "natural panacea". Of course, deliciousness is guaranteed. We carry a variety of flavors.',
+        image: 'images/honey.jpg',
+        country: 'Nepal'
     },
     {
-        title: 'Shilajit from Nepal',
+        title: 'Shilajit',
         description:
-            'Unlock the power of ancient remedies with our premium Shilajit from the Himalayas. Experience wellness like never before.',
-        image: 'images/shilajeet.jpg'
+            'Shilajit is said to be effective for diabetes and blood sugar levels. Please check out the power of Himalayan products.',
+        image: 'images/shilajeet.jpg',
+        country: 'Nepal'
     },
     {
-        title: 'Whole Tomatoes',
+        title: 'Tomato (whole)',
         description:
-            'Plump, juicy, and bursting with freshness – our whole tomatoes are a kitchen essential for creating vibrant and flavorful dishes.',
-        image: 'images/tomato.jpg'
+            'Our signature whole tomatoes are sweet and sour. It will serve as a complement to any dish.',
+        image: 'images/tomato.jpg',
+        country: 'Italy'
     }
 ];
 export const products_ja: ProductItem[] = [
     {
-        title: 'ブラジルチキン',
+        title: 'チキン',
         description:
-            'ジューシーで柔らかく、丁寧に育てられたブラジル産鶏肉は、品質へのこだわりの証です。 一口ごとに違いを味わってください！',
-        image: 'images/brazil-chicken.jpg'
+            '私たちが取り扱う鶏肉はふっくら、ジューシー。品質へのこだわりの証です。一口ごとに違いを味わってください。',
+        image: 'images/brazil-chicken.jpg',
+        country: 'ブラジル等'
     },
     {
         title: 'カシューナッツ',
         description:
-            'プレミアムカシューナッツの健康的な美味しさと豊かな風味をお楽しみください。 おやつとしても食材としても、これらのナッツはあらゆる料理を引き立てます。',
-        image: 'images/cachew-nuts.jpg'
+            'プレミアムカシューナッツ。健康的な風味と豊かな味わいはそのままでも！食材としてお使いならばあらゆる料理を引き立たせます！',
+        image: 'images/cachew-nuts.jpg',
+        country: 'ベトナム等'
     },
     {
-        title: '木炭',
+        title: '炭',
         description:
-            '本格的なBBQ体験には欠かせないアイテム。 当社の高品質の木炭は、グリル料理を完璧なスモーキーさで満たすことを保証します。',
-        image: 'images/charcol.jpg'
+            '当社の炭の「詰まった音」をお確かめください。それは燃焼時間が長く保たれる証し。BBQ やグリル料理等、様々なシーンで重宝いたします。',
+        image: 'images/charcol.jpg',
+        country: 'インドネシア等'
     },
     {
-        title: 'オーストラリアラム肉とマトン',
+        title: 'ラム・マトン',
         description:
-            'オーストラリア産のラムとマトンの濃厚な旨みをぜひご賞味ください。 自然のままの風景から採れたこの料理は、あなたの味覚を魅了します。',
-        image: 'images/australian-lamb.jpg'
+            'ラム・マトンの「独特の風味」をお楽しみください。それはまさに「大自然の恵み」。濃厚さも格別です。',
+        image: 'images/australian-lamb.jpg',
+        country: 'オーストラリア等'
     },
     {
-        title: 'キャノーラ油（オーストラリア・カナダ）',
+        title: 'キャノーラ',
         description:
-            '心臓に良いキャノーラ油で料理をワンランクアップさせましょう。 最高級の菜の花畑から調達したものが、おいしい食事の秘訣です。',
-        image: 'images/canola-oil.jpg'
+            '身体にに良いとされるキャノーラ油。もうワンランクアップさせるなら私たちのキャノーラ油を是非ご賞味ください。',
+        image: 'images/canola-oil.jpg',
+        country: 'オーストラリア等'
     },
     {
         title: 'はちみつ',
         description:
-            '自然の黄金の万能薬、私たちの蜂蜜は純粋な喜びです。 花のようなものから芳醇なものまで、当社の蜂蜜シリーズはテーブルに自然な甘さをもたらします。',
-        image: 'images/honey.jpg'
+            'まさに「自然の万能薬」。もちろん美味しさも保証付き。様々な風味のものを取り扱っております。',
+        image: 'images/honey.jpg',
+        country: 'ネパール等'
     },
     {
-        title: 'シラジット（ネパール）',
+        title: 'シラジット',
         description:
-            'ヒマラヤ産のプレミアム シラジットで古代療法の力を解き放ちます。 これまでにない健康を体験してください。',
-        image: 'images/shilajeet.jpg'
+            '糖尿病や血糖値に効果があるとされるシラジット。その中でも「ヒマラヤ産」のパワーをお確かめください。',
+        image: 'images/shilajeet.jpg',
+        country: 'ネパール等'
     },
     {
-        title: 'ホールトマト',
+        title: 'トマト（ホール）',
         description:
-            'ふっくら、ジューシー、そして新鮮さがあふれるホールトマトは、鮮やかで風味豊かな料理を作るのに欠かせないキッチンです。',
-        image: 'images/tomato.jpg'
+            '甘くて、酸味のある私たち自慢のホールトマト。あらゆる料理の引き立たせ役となるでしょう。',
+        image: 'images/tomato.jpg',
+        country: 'イタリア等'
     }
 ];
 
@@ -124,54 +141,54 @@ export const whyChooseUs_en: WhyChooseUsItem[] = [
     {
         title: 'Quality Assurance',
         description:
-            'We believe in the highest standards. Each product is carefully selected to meet our quality benchmarks.',
+            'As a food business, the most important thing is the safety and security of our customers. To achieve this, we not only have to meet various standards, but we also do not allow any compromise with the manufacturer.',
         icon: 'CheckBadgeIcon'
     },
     {
         title: 'Global Network',
         description:
-            "With a reach that spans continents, we ensure a seamless import and export process, including our special connection to Japan, to bring you the world's most sought-after flavors.",
+            'We provide a variety of services, including food and human resources, and we guarantee seamless import and export, born from our special network between Japan and overseas, and promise to provide carefully selected ingredients.',
         icon: 'GlobeAsiaAustraliaIcon'
     },
     {
         title: 'Passion for Food',
         description:
-            "We share your love for food. Our team's passion drives us to curate products that delight both your palate and senses.",
+            'Our passion for food is directed towards your commitment to food. Your satisfaction fuels our passion.',
         icon: 'HeartIcon'
-    },
-    {
-        title: 'Sustainability',
-        description:
-            "We're committed to ethical sourcing and sustainable practices, ensuring that you savor not only great taste but also a clear conscience.",
-        icon: 'ArrowPathIcon'
     }
+    // {
+    //     title: 'Sustainability',
+    //     description:
+    //         "We're committed to ethical sourcing and sustainable practices, ensuring that you savor not only great taste but also a clear conscience.",
+    //     icon: 'ArrowPathIcon'
+    // }
 ];
 
 export const whyChooseUs_ja: WhyChooseUsItem[] = [
     {
         title: '品質保証',
         description:
-            '私たちは最高の基準を信じています。 各製品は、当社の品質ベンチマークを満たすように慎重に選択されています。',
+            '食を扱う事業者として、最も大事なのはお客様の「安心」「安全」です。そのためには様々な基準を満たすことはもちろんの事、メーカーに対しても一切の妥協を許しません。',
         icon: 'CheckBadgeIcon'
     },
     {
         title: 'グローバルネットワーク',
         description:
-            '大陸を越えてサービスを展開する当社は、日本との特別なつながりを含め、シームレスな輸出入プロセスを保証し、世界で最も人気のあるフレーバーをお届けします。',
+            '食材を問わず、人材など、様々サービス展開する私たちは、日本と海外との特別なネットワークから生まれる、シームレスな輸出入を保証し、厳選された食材のご提供をお約束します。',
         icon: 'GlobeAsiaAustraliaIcon'
     },
     {
         title: '食への情熱',
         description:
-            '私たちはあなたの食べ物への愛を共有します。 私たちのチームの情熱は、あなたの味覚と五感の両方を喜ばせる製品を厳選することに私たちを駆り立てます。',
+            '私たちの食への情熱の方向性は皆様の食へのこだわりに向けられています。みなさんの満足が私たちのさらなる情熱を駆り立てます。',
         icon: 'HeartIcon'
-    },
-    {
-        title: '持続可能性',
-        description:
-            '私たちは倫理的な調達と持続可能な実践に尽力し、素晴らしい味だけでなく明確な良心を味わっていただけるよう努めています。',
-        icon: 'ArrowPathIcon'
     }
+    // {
+    //     title: '持続可能性',
+    //     description:
+    //         '私たちは倫理的な調達と持続可能な実践に尽力し、素晴らしい味だけでなく明確な良心を味わっていただけるよう努めています。',
+    //     icon: 'ArrowPathIcon'
+    // }
 ];
 
 export const blobs_en: BlobItem[] = [

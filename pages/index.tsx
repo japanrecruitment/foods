@@ -5,22 +5,19 @@ import {
     products_en,
     products_ja,
     whyChooseUs_en,
-    whyChooseUs_ja,
-    blobs_en,
-    blobs_ja
+    whyChooseUs_ja
 } from '../app/config';
 import { Element } from 'react-scroll';
 import { useRouter } from 'next/router';
 
-import { Section } from '../app/components/Section';
 import {
     About,
     Notice,
-    BlobSection,
     ProductsSection,
-    HeroTitle,
     WhyChooseUsSection,
-    HeroSection
+    HeroSection,
+    IntroductionSection,
+    Cta
 } from '../app/components';
 
 const Component = () => {
@@ -30,7 +27,6 @@ const Component = () => {
 
     const whyChooseUs = locale === 'en' ? whyChooseUs_en : whyChooseUs_ja;
     const products = locale === 'en' ? products_en : products_ja;
-    const blobs = locale === 'en' ? blobs_en : blobs_ja;
 
     return (
         <>
@@ -42,7 +38,7 @@ const Component = () => {
                 <HeroSection />
             </Element>
             <Element name="introduction">
-                <BlobSection blobs={blobs} />
+                <IntroductionSection />
             </Element>
             <Element name="products">
                 <ProductsSection products={products} />
@@ -52,6 +48,9 @@ const Component = () => {
             </Element>
             <Element name="company">
                 <About />
+            </Element>
+            <Element name="cta">
+                <Cta />
             </Element>
         </>
     );
