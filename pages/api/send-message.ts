@@ -28,8 +28,10 @@ export default async function handler(
                 res.status(500).json({ message: 'anErrorOccurred' });
             } else {
                 console.log('Server is ready to take our messages');
+            }
+        });
 
-                const emailUsText = `
+        const emailUsText = `
 This email is sent from JRG Foods website contact page
 ------------------------------------------------------------
 Company Name: ${companyName}
@@ -46,7 +48,7 @@ ${message}
 メッセージ:
 ${message}
 ------------------------------------------------------------`;
-                const emailThemText = `
+        const emailThemText = `
 ${name}様、
 
 いつも弊社にお問い合わせいただき、ありがとうございます。
@@ -67,20 +69,18 @@ ${name}様、
 ${message}
 ------------------------------------------------------------`;
 
-                const emailUs = await transporter.sendMail({
-                    from: `JRG Food <info@japanrecruitment.co.jp>`,
-                    to: `${process.env.CONTACT_EMAIL_RECEPIENT}`,
-                    subject: `JRG フードお問い合わせ`, // Subject line
-                    text: emailUsText // plain text body
-                });
+        const emailUs = await transporter.sendMail({
+            from: `JRG Food <info@japanrecruitment.co.jp>`,
+            to: `${process.env.CONTACT_EMAIL_RECEPIENT}`,
+            subject: `JRG フードお問い合わせ`, // Subject line
+            text: emailUsText // plain text body
+        });
 
-                const emailThem = await transporter.sendMail({
-                    from: `JRG Food <info@japanrecruitment.co.jp>`,
-                    to: `${name} <${email}>`,
-                    subject: `【JRG フード】お問い合わせフォームを受け取りました`, // Subject line
-                    text: emailThemText // plain text body
-                });
-            }
+        const emailThem = await transporter.sendMail({
+            from: `JRG Food <info@japanrecruitment.co.jp>`,
+            to: `${name} <${email}>`,
+            subject: `【JRG フード】お問い合わせフォームを受け取りました`, // Subject line
+            text: emailThemText // plain text body
         });
 
         res.status(200).json({ message: `Hello ${name} from ${companyName}` });
