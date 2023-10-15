@@ -13,3 +13,4 @@ export * from './SectionTitle';
 export * from './SectionSubTitle';
 export * from './SectionHeading';
 export * from './HeroTitle';
+export * from './Modal';

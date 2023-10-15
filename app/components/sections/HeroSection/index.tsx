@@ -12,7 +12,7 @@ export const HeroSection = () => {
                 i18nKey="common:hero-title"
                 components={[<HeroTitle />, <br />]}
             />
-            <p className="text-blue-200">{t('hero-subtitle')}</p>
+            <h3 className="hero-subtitle">{t('hero-subtitle')}</h3>
         </Section>
     );
 };

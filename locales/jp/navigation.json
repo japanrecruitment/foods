@@ -1,15 +1,7 @@
 {
     "home": "トップ",
     "about": "会社概要",
-    "how-to-send": "送金方法",
-    "how-to-send-money": "送金方法",
-    "how-to-register": "登録方法",
-    "branches": "支店",
-    "our-branches": "支店",
-    "notices": "お知らせ",
-    "contact": "お問い合わせ",
-    "contact-us": "お問い合わせ",
-    "jp-terms-01": "Terms of usage",
-    "jp-terms-02": "Privacy Policy",
-    "jp-terms-03": "Policy against anti-social forces"
+    "products": "製品",
+    "why-choose-us": "選ぶ理由",
+    "contact": "お問い合わせ"
 }

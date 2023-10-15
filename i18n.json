@@ -3,5 +3,6 @@
     "defaultLocale": "jp",
     "pages": {
         "*": ["common", "navigation"]
-    }
+    },
+    "localeDetection": false
 }
