@@ -25,7 +25,7 @@ const defaultData = {
     message: ''
 };
 
-export const Cta = () => {
+export const Contact = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<Record<string, string>>({});
     const [data, setData] = useState<ContactFormData>(defaultData);
