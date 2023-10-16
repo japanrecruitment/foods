@@ -4,4 +4,4 @@ export * from './ProductsSection';
 export * from './WhyChooseUsSection';
 export * from './HeroSection';
 export * from './IntroductionSection';
-export * from './CtaSection';
+export * from './ContactSection';

@@ -17,7 +17,7 @@ import {
     WhyChooseUsSection,
     HeroSection,
     IntroductionSection,
-    Cta
+    Contact
 } from '../app/components';
 
 const Component = () => {
@@ -49,8 +49,8 @@ const Component = () => {
             <Element name="company">
                 <About />
             </Element>
-            <Element name="cta">
-                <Cta />
+            <Element name="contact">
+                <Contact />
             </Element>
         </>
     );
